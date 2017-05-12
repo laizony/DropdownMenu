@@ -30,7 +30,7 @@ Layout 代码:
     dm:titleText="默认选项"
     dm:titleTextSize="14"/>
 
-dm:titleDrawableBg="@drawable/edittext_dropmemu"
+设置drawable背景：dm:titleDrawableBg="@drawable/edittext_dropmemu"
 titleDrawableBg设置后titleBgColor将会失效。
 ```
 
