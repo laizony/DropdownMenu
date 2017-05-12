@@ -86,6 +86,7 @@ public class DropdownMenu extends RelativeLayout {
         final int iconColor = attributes.getColor(R.styleable.DropdownMenu_iconColor, 0xffcccccc);
         final int highLightColor = attributes.getColor(R.styleable.DropdownMenu_titleHighLight, NO_HIGHLIGHT);
         Drawable leftDrawable = attributes.getDrawable(R.styleable.DropdownMenu_drawableLeft);
+        Drawable titleDrawableBg = attributes.getDrawable(R.styleable.DropdownMenu_titleDrawableBg);
         float drawablePadding = attributes.getDimensionPixelSize(R.styleable.DropdownMenu_drawablePadding, 0);
 
         mIconView = new FontIcon(mContext);
@@ -96,7 +97,14 @@ public class DropdownMenu extends RelativeLayout {
         attributes.recycle();
 
         setLayoutParams(new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-        setBackgroundColor(titleBgColor);
+
+        //背景设置
+        if(titleDrawableBg!=null){
+            setBackground(titleDrawableBg);
+        }else{
+            setBackgroundColor(titleBgColor);
+        }
+
         setGravity(Gravity.CENTER);
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

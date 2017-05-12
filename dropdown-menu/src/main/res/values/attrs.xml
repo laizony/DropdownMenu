@@ -15,6 +15,7 @@
         <attr name="titleTextSize"/>
         <attr name="titleColor"/>
         <attr name="titleBgColor"/>
+        <attr name="titleDrawableBg" format="reference"/>
         <attr name="iconExpanded"/>
         <attr name="iconCollapse"/>
         <attr name="iconColor"/>

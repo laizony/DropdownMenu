@@ -20,9 +20,10 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             dm:titleHighLight="@color/colorPrimary"
+
+            dm:titleBgColor="#eee"
             dm:iconColor="#aaa"
             dm:listBgColor="#fff"
-            dm:titleBgColor="#eee"
             dm:titleText="Select Number"
             dm:titleTextSize="14sp"/>
 

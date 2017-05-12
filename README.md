@@ -10,7 +10,8 @@
 （work in process: 本项目为学习使用，不保证使用稳定性，请慎重使用。）
 
 <p align="center">
-    <img src="art/screenshot.png" alt="screenshot" style="width: 200px;"/>
+    <img src="art/Screenshot_list.png" alt="screenshot" style="width: 200px;"/>
+	<img src="art/Screenshot_cascade.png" alt="screenshot" style="width: 200px;"/>
 </p>
 
 ## 使用
@@ -28,6 +29,9 @@ Layout 代码:
     dm:titleBgColor="#eee"
     dm:titleText="默认选项"
     dm:titleTextSize="14"/>
+
+dm:titleDrawableBg="@drawable/edittext_dropmemu"
+titleDrawableBg设置后titleBgColor将会失效。
 ```
 
 Java 代码:
@@ -45,19 +49,6 @@ menu.setOnItemClickListener(new OnDropdownItemClickListener() {
 MenuManager.group(menu, menu2);
 ```
 
-## 依赖
-
-```groovy
-allprojects {
-    repositories {
-        maven { url "https://jitpack.io" }
-    }
-}
-
-dependencies {
-    compile 'com.github.twiceyuan:DropdownMenu:1.1.6'
-}
-```
 
 ## 更新日志
 
